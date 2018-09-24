@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Bar Chart</title>
+</head>
+
+<body>
+    <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+        window.onload = function () {
+
+            new Chart(document.getElementById("bar-chart-grouped"), {
+type: 'bar',
+data: {
+  labels: ["1900", "1950", "1999", "2050"],
+  datasets: [
+    {
+      backgroundColor: "#3e95cd",
+      data: [133,221,783,2478]
+    }
+        ]
+    },
+});
+}
+</script>
+</html>
